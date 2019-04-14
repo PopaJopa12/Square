@@ -8,12 +8,6 @@ import java.util.Scanner;
                 int x;
                 Scanner scan = new Scanner(System.in);
                 start();
-                System.out.println("Restart program?:");
-                x = scan.nextInt();
-                if (x==1){
-                    start();
-                }
-
             }
             private static void start(){
                 double s;
@@ -27,5 +21,10 @@ import java.util.Scanner;
                 input.In(x);
                 s = input.S1;
                 System.out.println(s);
+                System.out.println("Restart program?: ");
+                s = scan.nextInt();
+                if (x==1){
+                    start();
+                }
             }
         }
